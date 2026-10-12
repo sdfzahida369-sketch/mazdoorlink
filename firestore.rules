@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // User profile rules
+    match /users/{userId} {
+      // Any authenticated user can read public profile details
+      allow read: if request.auth != null;
+      // Users can only create or update their own profile document
+      allow create, update: if request.auth != null && request.auth.uid == userId;
+      allow delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Construction sites rules
+    match /construction_sites/{siteId} {
+      // Anyone logged in can read sites
+      allow read: if request.auth != null;
+      // Authenticated users (contractors) can create new sites
+      allow create: if request.auth != null;
+      // Only the contractor who posted the site can update or delete it
+      allow update, delete: if request.auth != null && (
+        resource.data.contractorId == request.auth.uid
+      );
+    }
+  }
+}

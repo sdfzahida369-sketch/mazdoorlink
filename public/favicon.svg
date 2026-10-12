@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="20" fill="#0A0A0A"/>
+  <!-- Gold hardhat & building silhouette combined -->
+  <path d="M50 20C33.4315 20 20 33.4315 20 50V56C20 57.1046 20.8954 58 22 58H78C79.1046 58 80 57.1046 80 56V50C80 33.4315 66.5685 20 50 20Z" fill="url(#goldGrad)" stroke="#D4AF37" stroke-width="2"/>
+  <rect x="15" y="58" width="70" height="8" rx="4" fill="#D4AF37"/>
+  <!-- Joined hands / connection arch -->
+  <path d="M32 72C40 65 60 65 68 72" stroke="#D4AF37" stroke-width="5" stroke-linecap="round"/>
+  <path d="M42 78L50 84L58 78" stroke="#F3E5AB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="goldGrad" x1="20" y1="20" x2="80" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E5AB"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#AA820A"/>
+    </linearGradient>
+  </defs>
+</svg>
