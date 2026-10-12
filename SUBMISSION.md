@@ -10,7 +10,7 @@
 ## 2. Project Details
 - **Project Name:** MazdoorLink (مزدور لنک)
 - **Deployed Project Link:** [Add your live Netlify / Vercel link here, e.g., `https://mazdoorlink.vercel.app`]
-- **GitHub / Source Code Repository:** [Add your repository link if applicable]
+- **GitHub / Source Code Repository:** https://github.com/sdfzahida369-sketch/mazdoorlink
 
 ---
 
